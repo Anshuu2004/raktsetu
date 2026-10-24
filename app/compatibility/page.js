@@ -24,23 +24,23 @@ export default function CompatibilityPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
       <h1 className="text-3xl font-bold text-gray-900">
-        {t("Blood Group Compatibility")}
+        {t("bloodCompatibility.title")}
       </h1>
 
       {/* overflow-x-auto makes the table scroll sideways on narrow screens */}
       <div className="mt-6 overflow-x-auto rounded-lg border border-gray-200">
         <table className="w-full min-w-[32rem] text-left">
-          <caption className="sr-only">{t("compatibility.title")}</caption>
+          <caption className="sr-only">{t("bloodCompatibility.title")}</caption>
           <thead className="bg-gray-50 text-sm text-gray-700">
             <tr>
               <th scope="col" className="px-4 py-3 font-semibold">
-                {t("Blood Group")}
+                {t("bloodCompatibility.bloodGroupHeader")}
               </th>
               <th scope="col" className="px-4 py-3 font-semibold">
-                {t("Can Donate To")}
+                {t("bloodCompatibility.canDonateToHeader")}
               </th>
               <th scope="col" className="px-4 py-3 font-semibold">
-                {t("Can Receive From")}
+                {t("bloodCompatibility.canReceiveFromHeader")}
               </th>
             </tr>
           </thead>
@@ -65,8 +65,6 @@ export default function CompatibilityPage() {
           </tbody>
         </table>
       </div>
-
-      {/* <p className="mt-4 text-sm text-gray-600">{t("Compatibility list")}</p> */}
     </div>
   );
 }
