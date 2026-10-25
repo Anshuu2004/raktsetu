@@ -13,6 +13,7 @@
     "request": "Request Blood",
     "donate": "Become a Donor",
     "donors": "Donors",
+    "compatibility": "Blood Compatibility",
     "about": "About",
     "privacy": "Privacy",
     "menu": "Menu",
@@ -136,6 +137,12 @@
     "requestContact": "Request Contact",
     "requestContactFor": "Request contact with {{name}}",
     "demoModeNotice": "Demo mode — contact requests aren't sent yet."
+  },
+  "bloodCompatibility": {
+    "title": "Blood Group Compatibility",
+    "bloodGroupHeader": "Blood Group",
+    "canDonateToHeader": "Can Donate To",
+    "canReceiveFromHeader": "Can Receive From"
   },
   "about": {
     "title": "About RaktSetu",
