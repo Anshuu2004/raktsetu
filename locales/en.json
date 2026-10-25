@@ -19,6 +19,11 @@
     "menu": "Menu",
     "close": "Close"
   },
+  "notFound": {
+    "title": "Page not found",
+    "message": "We couldn't find the page you're looking for. Check the address or head back home.",
+    "homeLink": "Back to home"
+  },
   "home": {
     "heroTitle": "RaktSetu",
     "heroTagline": "Privacy-first blood donor & recipient connect platform.",
