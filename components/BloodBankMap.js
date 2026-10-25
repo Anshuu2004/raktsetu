@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
@@ -28,12 +28,17 @@ const INDIA_CENTER = [22.5, 79];
 function FitBounds({ points }) {
   const map = useMap();
   const key = points.map((p) => p.join(",")).join("|");
-  const [lastKey, setLastKey] = useState(null);
-  if (key !== lastKey) {
-    setLastKey(key);
-    if (points.length === 1) map.setView(points[0], 11);
-    else if (points.length > 1) map.fitBounds(points, { padding: [40, 40] });
-  }
+
+  useEffect(() => {
+    const visiblePoints = key
+      ? key.split("|").map((point) => point.split(",").map(Number))
+      : [];
+
+    if (visiblePoints.length === 1) map.setView(visiblePoints[0], 11);
+    else if (visiblePoints.length > 1)
+      map.fitBounds(visiblePoints, { padding: [40, 40] });
+  }, [key, map]);
+
   return null;
 }
 
