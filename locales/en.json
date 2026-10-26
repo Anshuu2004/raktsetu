@@ -13,6 +13,7 @@
     "request": "Request Blood",
     "donate": "Become a Donor",
     "donors": "Donors",
+    "compatibility": "Blood Compatibility",
     "about": "About",
     "privacy": "Privacy",
     "menu": "Menu",
@@ -132,6 +133,12 @@
     "emptyTitle": "No donors listed yet",
     "emptyMessage": "Donors appear here once they opt in. In the meantime, you can look up blood banks near you.",
     "emptyAction": "Browse blood banks"
+  },
+  "bloodCompatibility": {
+    "title": "Blood Group Compatibility",
+    "bloodGroupHeader": "Blood Group",
+    "canDonateToHeader": "Can Donate To",
+    "canReceiveFromHeader": "Can Receive From"
   },
   "about": {
     "title": "About RaktSetu",
